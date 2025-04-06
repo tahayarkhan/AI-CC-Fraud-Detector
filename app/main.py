@@ -2,8 +2,9 @@ import streamlit as st
 import pandas as pd
 import joblib
 from explainer import explain_prediction
+import os
 
-model = joblib.load("../models/model.pkl")
+model = joblib.load(os.path.join("models", "model.pkl"))
 
 st.title("AI-Powered Financial Fraud Detector")
 
