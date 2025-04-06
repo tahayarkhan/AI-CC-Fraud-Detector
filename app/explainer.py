@@ -19,7 +19,7 @@ def explain_prediction(features, prediction):
         model="command-r-plus-08-2024",  
         prompt=prompt,
         max_tokens=8000,
-        temperature=2
+        temperature=0.3
     )
 
     return response.generations[0].text.strip()
